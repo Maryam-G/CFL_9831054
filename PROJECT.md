@@ -69,5 +69,12 @@ int main(){
                 t[2][4]=p;
                 break;
         }
+		 for(int i=0;i<3;i++){
+            for(int j=0;j<5;j++){
+                printf("%c ",t[i][j]);
+            }
+            printf("\n");
+            printf("\n");
+        }
 	return 0;
 }
