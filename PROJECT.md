@@ -14,7 +14,6 @@ int finish(){
         }
     }
 }
-
 int main(){
     char first_player,second_player,p;
     int n;
@@ -31,7 +30,8 @@ int main(){
     }else{
         second_player='X';
     }
-	 while(1){
+
+    while(1){
         if(cnt%2!=0){
             p=first_player;
         }else{
@@ -69,14 +69,14 @@ int main(){
                 t[2][4]=p;
                 break;
         }
-		for(int i=0;i<3;i++){
+        for(int i=0;i<3;i++){
             for(int j=0;j<5;j++){
                 printf("%c ",t[i][j]);
             }
             printf("\n");
             printf("\n");
         }
-		if(finish()==0) {
+        if(finish()==0) {
             if (cnt% 2 == 0) {
                 printf("Player %c is winner :) ", second_player);
                 return 0;
@@ -89,5 +89,6 @@ int main(){
             printf("No winner!");
             return 0;
         }
-	return 0;
+        cnt++;
+    }
 }
