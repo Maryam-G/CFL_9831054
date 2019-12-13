@@ -31,5 +31,43 @@ int main(){
     }else{
         second_player='X';
     }
+	 while(1){
+        if(cnt%2!=0){
+            p=first_player;
+        }else{
+            p=second_player;
+        }
+        printf("Player %c:\n",p);
+        printf("please enter number of your place:\n");
+        scanf("%d",&n);
+        switch(n){
+            case 1:
+                t[0][0]=p;
+                break;
+            case 2:
+                t[0][2]=p;
+                break;
+            case 3:
+                t[0][4]=p;
+                break;
+            case 4:
+                t[1][0]=p;
+                break;
+            case 5:
+                t[1][2]=p;
+                break;
+            case 6:
+                t[1][4]=p;
+                break;
+            case 7:
+                t[2][0]=p;
+                break;
+            case 8:
+                t[2][2]=p;
+                break;
+            case 9:
+                t[2][4]=p;
+                break;
+        }
 	return 0;
 }
