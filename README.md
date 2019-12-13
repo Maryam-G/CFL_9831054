@@ -1,4 +1,4 @@
-This project is a gmae that two users can play it.The name of two users is player_X and player_O.
+This project is a game that two users can play it.The name of two users is player_X and player_O.
 the environment of game is a table with 3 columns and 3 rows. 
 In each round, user will enter a number of place in table.(a number between 1 and 9)
 After 9 round, game will finish.
