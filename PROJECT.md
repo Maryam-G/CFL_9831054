@@ -69,12 +69,25 @@ int main(){
                 t[2][4]=p;
                 break;
         }
-		 for(int i=0;i<3;i++){
+		for(int i=0;i<3;i++){
             for(int j=0;j<5;j++){
                 printf("%c ",t[i][j]);
             }
             printf("\n");
             printf("\n");
+        }
+		if(finish()==0) {
+            if (cnt% 2 == 0) {
+                printf("Player %c is winner :) ", second_player);
+                return 0;
+            } else {
+                printf("Player %c is winner :) ", first_player);
+                return 0;
+            }
+        }
+        if(finish()==2){
+            printf("No winner!");
+            return 0;
         }
 	return 0;
 }
